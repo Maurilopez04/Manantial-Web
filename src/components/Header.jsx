@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { FaMapMarkedAlt, FaPhoneAlt, FaWhatsapp, FaInstagram, FaLinkedin, FaFacebook  } from "react-icons/fa";
 
 const ResponsiveHeader = () => {
-  const [atTop, setAtTop] = useState(true); // Estado para saber si estamos en la parte superior
-  const [open, setOpen] = useState(false); // Estado para el menú responsive
+  const [atTop, setAtTop] = useState(true);
+  const [open, setOpen] = useState(false);
 
   // Función que detecta el scroll
   useEffect(() => {
@@ -41,7 +41,9 @@ const ResponsiveHeader = () => {
             >
               {/* Icono de hamburguesa */}
               <svg
-                className="w-6 h-6"
+                className={`w-6 h-6 ${
+                  atTop ? "text-black" : "text-white"
+                }`}
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -85,7 +87,7 @@ const ResponsiveHeader = () => {
                 atTop ? "text-black" : "text-white"
               } hover:text-gray-400`}
             >
-              Blog
+              Posts
             </a>
             <a
               href="#_"

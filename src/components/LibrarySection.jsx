@@ -1,12 +1,12 @@
 
 const LibrarySection = () => {
   return (
-    <div className="container pt-32 md:max-w-6xl mx-auto">
+    <div className="container pt-28 md:max-w-6xl mx-auto">
       {/* Header */}
       <div className="relative overflow-hidden w-full">
       <div className="px-6 py-8 sm:px-6 sm:py-10">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-2xl font-semibold tracking-tight text-center text-black sm:text-4xl">
+          <h2 className="text-4xl font-semibold tracking-tight text-center text-black sm:text-4xl">
           Jesús te ama, no importa tu pasado
           </h2>
           <p className="max-w-3xl mx-auto mt-3 text-gray-700 sm:mt-6 text-md sm:text-lg sm:leading-snug">

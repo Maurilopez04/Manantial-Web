@@ -38,7 +38,7 @@ const CardList = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-10">
+    <div className="bg-gray-50 pt-10">
       <h3 className="text-center py-2 text-4xl font-bold capitalize text-blue-900">Únete con nosotros</h3>
       <div className="flex flex-col items-center gap-8 md:px-10 py-4 sm:flex-row sm:justify-center sm:max-w-7xl mx-auto">
       <CultosCard

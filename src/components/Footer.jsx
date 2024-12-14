@@ -1,13 +1,13 @@
 import React from "react";
-import { FaFacebook, FaDiscord, FaTwitter, FaGithub, FaGlobe } from "react-icons/fa";
+import { FaFacebook, FaDiscord, FaTwitter, FaGithub, FaGlobe, FaInstagram, FaGoogle, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-white ">
+    <footer className="bg-white pt-12">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="/" className="flex items-center">
               <img
                 src="/img/288042515_1421770948298836_6574963667308334909_n-removebg-preview.png"
                 className="h-12 me-3"
@@ -21,43 +21,43 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
-                Resources
+                Links
               </h2>
               <ul className="text-gray-500  font-medium">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Flowbite
+                  <a href="/" className="hover:underline">
+                    Posts
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://tailwindcss.com/"
+                    href="/"
                     className="hover:underline"
                   >
-                    Tailwind CSS
+                    Contacto
                   </a>
                 </li>
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                Follow us
+                Informacion
               </h2>
               <ul className="text-gray-500 ">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="/"
                     className="hover:underline"
                   >
-                    Github
+                    Sobre Nosotros
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="/"
                     className="hover:underline"
                   >
-                    Discord
+                    Ubicación
                   </a>
                 </li>
               </ul>
@@ -69,12 +69,12 @@ const Footer = () => {
               <ul className="text-gray-500  font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Privacy Policy
+                    Politica de privacidad
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:underline">
-                    Terms &amp; Conditions
+                    Terminos y Condiciones
                   </a>
                 </li>
               </ul>
@@ -84,11 +84,11 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
-            © 2023{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
+            © 2024{" "}
+            <a href="/" className="hover:underline">
+              Manantial De Vida
             </a>
-            . All Rights Reserved.
+            . Todos los derechos reservados.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
@@ -96,36 +96,30 @@ const Footer = () => {
               className="text-gray-500 hover:text-gray-900"
             >
               <FaFacebook className="w-5 h-5" />
-              <span className="sr-only">Facebook page</span>
+              <span className="sr-only">Facebook</span>
             </a>
             <a
               href="#"
               className="text-gray-500 hover:text-gray-900 ms-5"
             >
-              <FaDiscord className="w-5 h-5" />
-              <span className="sr-only">Discord community</span>
+              <FaInstagram className="w-5 h-5" />
+              <span className="sr-only">Instagram</span>
             </a>
             <a
-              href="#"
+              href="https://maps.app.goo.gl/J5WsiueJvxidLLDy6"
               className="text-gray-500 hover:text-gray-900 ms-5"
             >
-              <FaTwitter className="w-5 h-5" />
+              <FaGoogle className="w-5 h-5" />
               <span className="sr-only">Twitter page</span>
             </a>
             <a
               href="#"
               className="text-gray-500 hover:text-gray-900 ms-5"
             >
-              <FaGithub className="w-5 h-5" />
+              <FaWhatsapp className="w-5 h-5" />
               <span className="sr-only">GitHub account</span>
             </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 ms-5"
-            >
-              <FaGlobe className="w-5 h-5" />
-              <span className="sr-only">Website</span>
-            </a>
+
           </div>
         </div>
       </div>
