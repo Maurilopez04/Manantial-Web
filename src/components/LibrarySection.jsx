@@ -1,14 +1,14 @@
 
 const LibrarySection = () => {
   return (
-    <div className="container pt-28 md:max-w-6xl mx-auto">
+    <div className="container pt-24 sm:pt-32 md:max-w-6xl mx-auto">
       {/* Header */}
       <div className="relative overflow-hidden w-full">
       <div className="px-6 py-8 sm:px-6 sm:py-10">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-semibold tracking-tight text-center text-black sm:text-4xl">
+          <h1 className="text-2xl font-semibold tracking-tight text-center text-black sm:text-4xl">
           Jesús te ama, no importa tu pasado
-          </h2>
+          </h1>
           <p className="max-w-3xl mx-auto mt-3 text-gray-700 sm:mt-6 text-md sm:text-lg sm:leading-snug">
           "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna." - Juan 3:16          </p>
           <p className="max-w-3xl mx-auto mt-3 text-gray-700 sm:mt-6 text-md sm:text-lg sm:leading-snug">    
@@ -48,7 +48,7 @@ const LibrarySection = () => {
       </div>
 */}
 
-<div className="container mx-auto px-5 py-24 lg:px-16 lg:pt-12">
+<div className="container mx-auto px-5 pb-10 sm:py-24 lg:px-16 lg:pt-12">
       <div className="-m-1 flex flex-wrap md:-m-2">
         <div className="flex w-1/2 flex-wrap">
           <div className="w-1/2 p-1 md:p-2">
@@ -78,21 +78,21 @@ const LibrarySection = () => {
             <img
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
-              src="/img/IMG_4637.JPG"
+              src="/img/2018-04-20.jpg"
             />
           </div>
           <div className="w-1/2 p-1 md:p-2">
             <img
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
-              src="/img/IMG_4473.JPG"
+              src="/img/WhatsApp Image 2024-12-15 at 13.59.55.jpeg"
             />
           </div>
           <div className="w-1/2 p-1 md:p-2">
             <img
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
-              src="/img/IMG_4463.JPG"
+              src="/img/WhatsApp Image 2024-12-15 at 14.03.06.jpeg"
             />
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = ({ icon, title, description, onClick }) => {
   return (
-    <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 animate-slide-up">
+    <div className="w-full md:w-1/2 lg:w-1/4 px-1 mb-8 animate-slide-up">
       <div className="bg-white p-4 border border-4 border-blue-800 rounded-lg shadow-lg text-center h-full flex flex-col">
         <div className="bg-blue-800 p-4 rounded-full mx-auto mb-4 inline-block">
           <div className="text-white text-4xl">{icon}</div>

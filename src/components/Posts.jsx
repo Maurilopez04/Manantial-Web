@@ -49,7 +49,7 @@ const Posts = () => {
       link: "#",
     },
     {
-      image: "/img/IMG_4632.JPG",
+      image: "/img/IMG_4981.JPG",
       alt: "Client-based adoption image",
       label: "Categoria 1",
       title: "Titulo 2 ejemplo",
@@ -58,7 +58,7 @@ const Posts = () => {
       link: "#",
     },
     {
-      image: "/img/IMG_4637.JPG",
+      image: "/img/IMG_4981.JPG",
       alt: "Intellectual capital image",
       label: "Categoria 2",
       title: "Titulo 3 ejemplo",

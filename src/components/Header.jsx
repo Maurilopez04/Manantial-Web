@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { FaMapMarkedAlt, FaPhoneAlt, FaWhatsapp, FaInstagram, FaLinkedin, FaFacebook  } from "react-icons/fa";
 
 const ResponsiveHeader = () => {
-  const [atTop, setAtTop] = useState(true);
-  const [open, setOpen] = useState(false);
+  const [atTop, setAtTop] = useState(true); // Estado para saber si estamos en la parte superior
+  const [open, setOpen] = useState(false); // Estado para el menú responsive
 
   // Función que detecta el scroll
   useEffect(() => {
@@ -21,29 +21,27 @@ const ResponsiveHeader = () => {
       {/* Header */}
       <div
         className={`fixed z-50 w-full px-8 py-2 transition-all duration-1000 rounded-full mt-4 mx-auto inset-x-0 ${
-          atTop
+        open ? "bg-transparent max-w-4xl" : atTop
             ? "bg-transparent max-w-4xl"
-            : "bg-black bg-opacity-90 backdrop-blur-xl max-w-6xl"
+            : "bg-black bg-opacity-90 backdrop-blur-xl max-w-7xl"
         }`}
       >
         <div className="flex flex-col w-full px-2 mx-auto md:items-center md:justify-between md:flex-row">
           <div className="flex flex-row items-center justify-between">
-          <img src="/img/288042515_1421770948298836_6574963667308334909_n-removebg-preview.png" alt="" width={'50px'} /> <h1
+          <img src="/img/288042515_1421770948298836_6574963667308334909_n-removebg-preview.png" alt="" width={'50px'} /> <h2
               className={`px-2 font-bold tracking-tighter uppercase ${
-                atTop ? "text-black" : "text-white"
+                open ? "text-black bg-white" : atTop ? "text-black" : "text-white"
               }`}
             >
                Manantial de vida
-            </h1>
+            </h2>
             <button
               onClick={() => setOpen(!open)}
-              className="md:hidden focus:outline-none"
+              className={`md:hidden focus:outline-none ${open ? "text-black bg-white" :atTop ? "text-black" : "text-white"}`}
             >
               {/* Icono de hamburguesa */}
               <svg
-                className={`w-6 h-6 ${
-                  atTop ? "text-black" : "text-white"
-                }`}
+                className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -59,63 +57,46 @@ const ResponsiveHeader = () => {
             </button>
           </div>
 
-          {/* Navigation */}
-          <nav
-            className={`${
-              open ? "flex" : "hidden"
-            } flex-col gap-6 pb-4 md:pb-0 md:flex md:flex-row lg:ml-auto justify-end`}
-          >
-            <a
-              href="#_"
-              className={`${
-                atTop ? "text-black" : "text-white"
-              } hover:text-gray-400`}
-            >
-              Conocenos
-            </a>
-            <a
-              href="#_"
-              className={`${
-                atTop ? "text-black" : "text-white"
-              } hover:text-gray-400`}
-            >
-             Ubicacion
-            </a>
-            <a
-              href="#_"
-              className={` ${
-                atTop ? "text-black" : "text-white"
-              } hover:text-gray-400`}
-            >
-              Posts
-            </a>
-            <a
-              href="#_"
-              className={` ${
-                atTop ? "text-black" : "text-white"
-              } hover:text-gray-400`}
-            >
-              Contacto
-            </a>
-            <div className="flex items-center gap-2 flex-wrap">
-            <a
-              href="#_"
-              className={`mx-1 ${
-                atTop ? "text-black" : "text-white"
-              } hover:text-gray-400`}
-            >
-              <FaFacebook/>
-            </a>
-            <a
-              href="#_"
-              className={`${
-                atTop ? "text-black" : "text-white"
-              } hover:text-gray-400`}
-            >
-              <FaInstagram/>
-            </a>
-            </div>
-          </nav>
+{/* Navigation */}
+<nav
+  className={`${
+    open ? `flex flex-col ${atTop ? "bg-white" : "bg-black"} w-full p-4 border rounded-lg shadow-lg` : "hidden"
+  } md:flex md:flex-row md:items-center md:bg-transparent md:p-0 gap-3 md:shadow-none justify-end`}
+>
+  {["Conócenos", "Ubicación", "Asistir", "Contacto"].map((item, index) => (
+    <a
+      key={index}
+      href="#_"
+      className={`block text-md font-medium ${
+        atTop ? "text-gray-800" : "text-white"
+      } hover:text-gray-400 transition-colors`}
+    >
+      {item}
+    </a>
+  ))}
+
+  <div className="flex items-center gap-4 mt-1 md:mt-0">
+    <a
+      href="#_"
+      className={`text-xl ${
+        atTop ? "text-gray-800" : "text-white"
+      } hover:text-gray-400 transition-colors`}
+      aria-label="Facebook"
+    >
+      <FaFacebook />
+    </a>
+    <a
+      href="#_"
+      className={`text-xl ${
+        atTop ? "text-gray-800" : "text-white"
+      } hover:text-gray-400 transition-colors`}
+      aria-label="Instagram"
+    >
+      <FaInstagram />
+    </a>
+  </div>
+</nav>
+
         </div>
       </div>
 
